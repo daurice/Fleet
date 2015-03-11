@@ -1,0 +1,14 @@
+C:\Users\threads\Desktop\Fleet\Fleet\bin\Debug\Fleet.exe
+C:\Users\threads\Desktop\Fleet\Fleet\bin\Debug\Fleet.pdb
+C:\Users\threads\Desktop\Fleet\Fleet\bin\Debug\Fleet.xml
+C:\Users\threads\Desktop\Fleet\Fleet\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\threads\Desktop\Fleet\Fleet\obj\Debug\Fleet.Splash.resources
+C:\Users\threads\Desktop\Fleet\Fleet\obj\Debug\Fleet.LoginForm.resources
+C:\Users\threads\Desktop\Fleet\Fleet\obj\Debug\Fleet.Resources.resources
+C:\Users\threads\Desktop\Fleet\Fleet\obj\Debug\Fleet.vbproj.GenerateResource.Cache
+C:\Users\threads\Desktop\Fleet\Fleet\obj\Debug\Fleet.exe
+C:\Users\threads\Desktop\Fleet\Fleet\obj\Debug\Fleet.xml
+C:\Users\threads\Desktop\Fleet\Fleet\obj\Debug\Fleet.pdb
+C:\Users\threads\Desktop\Fleet\Fleet\bin\Debug\fleet_database.mdb
+C:\Users\threads\Desktop\Fleet\Fleet\bin\Debug\Fleet.exe.config
+C:\Users\threads\Desktop\Fleet\Fleet\obj\Debug\Fleet.Fleet_main.resources

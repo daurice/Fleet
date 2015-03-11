@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{456C7E31-6A77-4D4A-BC2D-405938EEF3B5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Fleet.My.MyApplication</StartupObject>
+    <RootNamespace>Fleet</RootNamespace>
+    <AssemblyName>Fleet</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>Iconblock-Remixed-Bus.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Fleet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Fleet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Fleet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Fleet.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.Designer.vb">
+      <DependentUpon>AboutBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusOnwers.Designer.vb">
+      <DependentUpon>BusOnwers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BusOnwers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusSchedules.Designer.vb">
+      <DependentUpon>BusSchedules.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BusSchedules.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company.Designer.vb">
+      <DependentUpon>Company.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Company.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirmation.Designer.vb">
+      <DependentUpon>Confirmation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverDetails.Designer.vb">
+      <DependentUpon>DriverDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fleet_databaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fleet_databaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fleet_main.Designer.vb">
+      <DependentUpon>Fleet_main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fleet_main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginWrong.Designer.vb">
+      <DependentUpon>LoginWrong.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginWrong.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementDetails.Designer.vb">
+      <DependentUpon>ManagementDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network.Designer.vb">
+      <DependentUpon>Network.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Network.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecordDelete.Designer.vb">
+      <DependentUpon>RecordDelete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RecordDelete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecordSaved.Designer.vb">
+      <DependentUpon>RecordSaved.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RecordSaved.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SavedPass.Designer.vb">
+      <DependentUpon>SavedPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SavedPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Routes.Designer.vb">
+      <DependentUpon>Routes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Routes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellTickets.Designer.vb">
+      <DependentUpon>SellTickets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SellTickets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UserAccount.Designer.vb">
+      <DependentUpon>UserAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleAdd.Designer.vb">
+      <DependentUpon>VehicleAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleSearch.Designer.vb">
+      <DependentUpon>VehicleSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WrongPassword.Designer.vb">
+      <DependentUpon>WrongPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WrongPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusOnwers.resx">
+      <DependentUpon>BusOnwers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusSchedules.resx">
+      <DependentUpon>BusSchedules.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company.resx">
+      <DependentUpon>Company.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirmation.resx">
+      <DependentUpon>Confirmation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverDetails.resx">
+      <DependentUpon>DriverDetails.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fleet_main.resx">
+      <DependentUpon>Fleet_main.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginWrong.resx">
+      <DependentUpon>LoginWrong.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementDetails.resx">
+      <DependentUpon>ManagementDetails.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network.resx">
+      <DependentUpon>Network.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecordDelete.resx">
+      <DependentUpon>RecordDelete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecordSaved.resx">
+      <DependentUpon>RecordSaved.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SavedPass.resx">
+      <DependentUpon>SavedPass.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Routes.resx">
+      <DependentUpon>Routes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellTickets.resx">
+      <DependentUpon>SellTickets.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAccount.resx">
+      <DependentUpon>UserAccount.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleAdd.resx">
+      <DependentUpon>VehicleAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleSearch.resx">
+      <DependentUpon>VehicleSearch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrongPassword.resx">
+      <DependentUpon>WrongPassword.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="fleet_databaseDataSet.xsc">
+      <DependentUpon>fleet_databaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="fleet_databaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fleet_databaseDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fleet_databaseDataSet.xss">
+      <DependentUpon>fleet_databaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\bus-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fleet_database.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Iconblock-Remixed-Bus.ico" />
+    <None Include="Resources\Check-icon.png" />
+    <None Include="Resources\Delete-2-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
